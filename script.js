@@ -1,45 +1,37 @@
-//complete this code
 class Animal {
-	 constructor(species) {
+  constructor(species) {
     this._species = species;
   }
 
-  // Getter for species
   get species() {
     return this._species;
   }
 
-  // Method to make a generic sound
   makeSound() {
-    console.log(`The ${species} makes a sound`);
+    console.log(`The ${this.species} makes a sound`);
+  }
+}
+
+class Cat extends Animal {
+  constructor() {
+    super("Cat");
   }
 
-	
+  purr() {
+    console.log("Purr");
+  }
 }
 
 class Dog extends Animal {
-	
-	constructor() {
+  constructor() {
     super("Dog");
   }
 
-  // Method to make a dog-specific sound
   bark() {
     console.log("Woof");
   }
 }
 
-class Cat extends Animal {
-	
-	constructor() {
-    super("Cat");
-  }
-
-  // Method to make a cat-specific sound
-  purr() {
-    console.log("Purr");
-  }
-}
 
 // Do not change the code below this line
 window.Animal = Animal;
