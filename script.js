@@ -19,8 +19,8 @@ class Animal {
 
 class Dog extends Animal {
 	
-	constructor(species) {
-    super(species);
+	constructor() {
+    super("Dog");
   }
 
   // Method to make a dog-specific sound
@@ -31,8 +31,8 @@ class Dog extends Animal {
 
 class Cat extends Animal {
 	
-	constructor(species) {
-    super(species);
+	constructor() {
+    super("Cat");
   }
 
   // Method to make a cat-specific sound
