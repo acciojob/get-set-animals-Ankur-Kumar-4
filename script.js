@@ -11,7 +11,7 @@ class Animal {
 
   // Method to make a generic sound
   makeSound() {
-    console.log("The animal makes a sound.");
+    console.log(`The ${species} makes a sound`);
   }
 
 	
